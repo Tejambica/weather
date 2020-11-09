@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  background-color: #cacccf;
+  padding: 50px;
+  padding-bottom: 100px; }
+  @media (max-width: 500px) {
+    body {
+      padding: 30px; } }
+
+#main-container {
+  background-color: #F5F5F5;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  border-radius: 15px; }
+
+#container-left {
+  background-color: #ffffff;
+  padding: 20px 0;
+  text-align: center; }
+
+#container-right {
+  padding: 10px 5px 40px 5px; }
+
+#search-bar {
+  border: none;
+  width: 80%;
+  padding: 0 16px; }
+
+#search-btn {
+  border: none;
+  background-color: transparent;
+  width: 10%; }
+
+#today-container {
+  margin-top: 5rem;
+  text-align: center; }
+
+#today-icon {
+  font-size: 8rem; }
+
+#today-temp {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 3.5rem;
+  width: 100%; }
+
+#today-dd {
+  font-size: 1rem; }
+
+.day-box {
+  width: 100%;
+  padding: 10px 30px;
+  margin: 0 auto; }
+
+.day-container {
+  margin: 0;
+  width: 100%; }
+
+.day-block {
+  margin-bottom: 30px;
+  padding: 10px;
+  text-align: center; }
+  .day-block-content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 10px; }
+
+.convert-box {
+  width: 99%;
+  margin: 0;
+  padding: 0 35px 20px 35px; }
+
+.convert-btn {
+  border: 1px solid #000000;
+  background-color: #FFFFFF;
+  height: 40px;
+  width: 40px;
+  border-radius: 50px;
+  margin-left: 10px; }
+
+input, button:focus {
+  outline: 0; }
+
+.today-highlight-container {
+  margin: 0;
+  width: 99%; }
+  .today-highlight-container h2 {
+    font-size: 1.3rem;
+    width: 100%;
+    padding: 15px 30px 30px 30px; }
+
+.today-highlight-box {
+  margin: 0;
+  padding: 10px 15px;
+  width: 100%; }
+
+.today-highlight-block {
+  margin-bottom: 1rem; }
+  @media (max-width: 500px) {
+    .today-highlight-block {
+      padding: 0 5px 0 5px; } }
+  .today-highlight-block-content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 150px;
+    padding: 10px; }
+    @media (max-width: 500px) {
+      .today-highlight-block-content {
+        height: 120px; } }
+
+.today-highlight-title {
+  font-size: 1.1rem;
+  color: #cacccf; }
+  @media (max-width: 500px) {
+    .today-highlight-title {
+      font-size: 0.7rem; } }
+
+.today-highlight-value {
+  font-size: 2.3vw; }
+  @media (max-width: 500px) {
+    .today-highlight-value {
+      font-size: 1.4vw; } }
+
+.active {
+  background-color: black;
+  color: white; }
+
+.icon {
+  font-size: 3rem;
+  padding-bottom: 5px; }
+
+.fa-sun {
+  color: #fbdb5b; }
+
+.fa-cloud-rain {
+  color: blue; }
+
+.fa-cloud {
+  color: #cacccf; }
+
+.fa-snowflake {
+  color: #cacccf; }
+
+.arrow {
+  color: #fbdb5b;
+  font-size: 2rem; }
+  @media (max-width: 500px) {
+    .arrow {
+      font-size: 0.8rem; } }
+
+.sun-time {
+  font-size: 1.5vw; }
+  @media (max-width: 500px) {
+    .sun-time {
+      font-size: 1vw; } }
+
+.tbd {
+  font-size: 1vw; }

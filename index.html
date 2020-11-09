@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Weather</title>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/min/styles.min.css">
+        <link rel="shortcut icon" href="assets/favicon/favicon1.ico">
+        
+    </head>
+    <body>
+        <div id="main-container" class="container-fluid">
+            <div class="row d-flex">
+                <div id="container-left" class="col-xs-12 col-lg-4">
+                    <div id="search-box">
+                        <input type="text" id="search-bar" placeholder="Search for places..."/>
+                        <button id="search-btn"><i class="fas fa-search"></i></button>
+                    </div>
+                    <div id="today-container">
+                        <div id='today-icon'> </div>
+                        <p id="today-temp"></p>
+                        <p id="today-dd">Search Results</p>
+                    </div>
+                </div>
+                <div id="container-right" class="col-xs-12 col-lg-8">
+                    <div class="row justify-content-end convert-box">
+                        <button class="convert-btn" id="c">°C</button>
+                        <button class="convert-btn active" id="f">°F</button>
+                    </div>
+                    <div class="row day-container">
+                        <div class="row day-box justify-content-between">
+                            <div class="day-block col-12 col-lg">
+                                <div class="day-block-content ">
+                                    <p id="day-1">Day 1</p>
+                                    <div class="icon" id="icon-1"></div>
+                                    <p class="day-temp" id="day-temp-1">TBD</p>
+                                </div>
+                            </div>
+                            <div class="day-block col-xs-6 col-lg">
+                                <div class="day-block-content ">
+                                    <p id="day-2">Day 2</p>
+                                    <div class="icon" id="icon-2"></div>
+                                    <p class="day-temp" id="day-temp-2">TBD</p>
+                                </div>
+                            </div>
+                            <div class="day-block col-xs-6 col-lg" >
+                                <div class="day-block-content ">
+                                    <p id="day-3">Day 3</p>
+                                    <div class="icon" id="icon-3"></div>
+                                    <p class="day-temp" id="day-temp-3">TBD</p>
+                                </div>
+                            </div>
+                            <div class="day-block col-xs-6 col-lg" >
+                                <div class="day-block-content  ">
+                                    <p id="day-4">Day 4</p>
+                                    <div class="icon" id="icon-4"></div>
+                                    <p class="day-temp" id="day-temp-4">TBD</p>
+                                </div>
+                            </div>
+                            <div class="day-block col-xs-6 col-lg" >
+                                <div class="day-block-content  ">
+                                    <p id="day-5">Day 5</p>
+                                    <div class="icon" id="icon-5"></div>
+                                    <p class="day-temp" id="day-temp-5">TBD</p>
+                                </div>  
+                            </div>
+                            <div class="day-block col-xs-6 col-lg" >
+                                <div class="day-block-content  ">
+                                    <p id="day-6">Day 6</p>
+                                    <div class="icon" id="icon-6"></div>
+                                    <p class="day-temp" id="day-temp-6">TBD</p>
+                                </div>                               
+                            </div>
+                            <div class="day-block col-xs-6 col-lg" >
+                                <div class="day-block-content  ">
+                                    <p id="day-7">Day 7</p>
+                                    <div class="icon" id="icon-7"></div>
+                                    <p class="day-temp" id="day-temp-7">TBD</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row today-highlight-container flex-wrap flex-row">
+                        <h2>Today's Highlights</h2>
+                        <div class="today-highlight-box row flex-wrap justify-content-between">
+                            <div class="col-xs-6 col-lg-4 today-highlight-block">
+                                <div class="today-highlight-block-content ">
+                                    <h3 class="today-highlight-title">
+                                        UV Index
+                                    </h3>
+                                    <p class="today-highlight-value" id="uv">
+                                        <span class="tbd">TBD</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-lg-4 today-highlight-block">
+                                <div class="today-highlight-block-content">
+                                    <h3 class="today-highlight-title"> Wind Status </h3>
+                                    <p class="today-highlight-value" id="wind">
+                                        <span class="tbd">TBD</span>
+                                    </p>
+                                </div>                               
+                            </div>
+                            <div class="col-xs-6 col-lg-4 today-highlight-block">
+                                <div class="today-highlight-block-content">
+                                    <h3 class="today-highlight-title"> Sunrise & Sunset </h3>
+                                    <p class="today-highlight-value" id="sun">
+                                        <span class="tbd">TBD</span>
+                                    </p>
+                                </div>                               
+                            </div>
+                            <div class="col-xs-6 col-lg-4 today-highlight-block">
+                                <div class="today-highlight-block-content"> 
+                                        <h3 class="today-highlight-title"> Humidity  </h3>
+                                    <p class="today-highlight-value" id="humidity">
+                                        <span class="tbd">TBD</span>
+                                    </p>
+                                </div>                               
+                            </div>
+                            <div class="col-xs-6 col-lg-4 today-highlight-block">
+                                <div class="today-highlight-block-content">
+                                    <h3 class="today-highlight-title"> Visibility  </h3>
+                                    <p class="today-highlight-value" id="visibility">
+                                        <span class="tbd">TBD</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-lg-4 today-highlight-block">
+                                <div class="today-highlight-block-content">
+                                    <h3 class="today-highlight-title"> Dew Point </h3>
+                                    <p class="today-highlight-value" id="dew">
+                                        <span class="tbd">TBD</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js" integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH" crossorigin="anonymous"></script>
+        <script defer src="assets/js/min/scripts.min.js"></script>
+    </body>
+</html>
